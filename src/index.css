@@ -1,0 +1,101 @@
+@import '98.css';
+
+:root {
+  --win95-teal: #008080;
+  --win-gray: #c0c0c0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--win95-teal);
+  overflow: hidden;
+  font-family: 'Pixelated MS Sans Serif', 'Tahoma', sans-serif;
+  user-select: none;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.desktop {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-icons {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+}
+
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 80px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.desktop-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  /* Filter removes harsh edges if necessary, but pixel art stays crisp */
+  image-rendering: pixelated;
+}
+
+.desktop-icon span {
+  color: white;
+  text-shadow: 1px 1px 0 #000;
+  font-size: 11px;
+  text-align: center;
+  border: 1px dotted transparent;
+  padding: 1px 4px;
+}
+
+.desktop-icon:active span {
+  background-color: #000080;
+  border: 1px dotted white;
+  text-shadow: none;
+}
+
+.window-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 400px;
+  max-width: 800px;
+  max-height: 80vh;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+  background: silver;
+  z-index: 100;
+}
