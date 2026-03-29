@@ -12,6 +12,7 @@ body {
   overflow: hidden;
   font-family: 'Pixelated MS Sans Serif', 'Tahoma', sans-serif;
   user-select: none;
+  filter: url(#crt-noise); /* Applies the subtle CRT distortion */
 }
 
 #root {

@@ -29,8 +29,8 @@ async function downloadImage(url, localPath) {
 async function fetchBlog() {
     console.log("Fetching from Notion database:", databaseId);
     
-    // Ensure directory exists
-    const imgDir = path.join(__dirname, 'src', 'assets', 'blog_images');
+    // Ensure directory exists in public folder
+    const imgDir = path.join(__dirname, 'public', 'assets', 'blog_images');
     if (!fs.existsSync(imgDir)) {
         fs.mkdirSync(imgDir, { recursive: true });
     }
@@ -105,7 +105,7 @@ async function fetchBlog() {
             try {
                 console.log(`Downloading image for ${title}...`);
                 await downloadImage(coverImageRemote, localPath);
-                localImageRelative = `/CGPC/src/assets/blog_images/${fileName}`;
+                localImageRelative = `/CGPC/assets/blog_images/${fileName}`;
             } catch (err) {
                 console.error(`Failed to download image for ${title}:`, err.message);
             }

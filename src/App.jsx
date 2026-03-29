@@ -81,10 +81,16 @@ function App() {
           <img src={iconVideos} alt="Videos" /><span>Videos</span>
         </div>
         <div className="desktop-icon" onDoubleClick={() => openLink('https://www.instagram.com/realcgpc')}>
-          <div style={{ width: 48, height: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#c0c0c0', border: '2px outset #dfdfdf', margin: '0 auto 4px auto' }}>
-            <Camera size={32} />
+          <div style={{ width: 48, height: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '4px' }}>
+            <img src={`${import.meta.env.BASE_URL}assets/instagram_icon.png`} alt="Fotos" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
           </div>
           <span>Fotos</span>
+        </div>
+        <div className="desktop-icon" onDoubleClick={() => openWindow('contacto', 'Contacto', Contacto)}>
+          <div style={{ width: 48, height: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '4px' }}>
+            <img src={`${import.meta.env.BASE_URL}assets/contact_icon.png`} alt="Contacto" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+          </div>
+          <span>Contacto</span>
         </div>
         <div className="desktop-icon" onDoubleClick={() => openWindow('documentos', 'Documentos', Documentos)}>
           <img src={iconDocumentos} alt="Documentos" /><span>Documentos</span>
@@ -110,9 +116,8 @@ function App() {
 
       {/* Taskbar */}
       <div className="window" style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '35px', margin: 0, zIndex: 9999, display: 'flex', alignItems: 'center', padding: '2px 4px', borderRadius: 0, borderRight: 'none', borderBottom: 'none', borderLeft: 'none' }}>
-        <button style={{ fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '5px', height: '100%', padding: '0 8px' }}>
-          <img src={iconSistema} alt="Start" style={{ width: 16, height: 16 }} />
-          Inicio
+        <button style={{ fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', padding: '0 8px', minWidth: 'auto' }}>
+          Iniciar
         </button>
         <div style={{ flexGrow: 1, display: 'flex', gap: '4px', marginLeft: '10px', height: '100%' }}>
           {openWindows.map(win => (

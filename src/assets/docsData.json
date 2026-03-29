@@ -1,0 +1,22 @@
+[
+  {
+    "id": "331a17b5-97bf-80ba-992b-c9b8f5f9dc19",
+    "title": "HISTORIA DEL OVERWORLD #1",
+    "category": "Comic",
+    "state": "Publicado",
+    "date": "2026-03-28T21:55:00.000Z",
+    "downloadUrl": "https://www.patreon.com/posts/comic-historias-152105406",
+    "coverImage": "/CGPC/assets/docs_images/331a17b5-97bf-80ba-992b-c9b8f5f9dc19_cover.jpg",
+    "fileUrl": "/CGPC/assets/docs_files/331a17b5-97bf-80ba-992b-c9b8f5f9dc19_file.pdf"
+  },
+  {
+    "id": "331a17b5-97bf-80e0-be7c-cf07de46fbbc",
+    "title": "Revista 37Bits #1",
+    "category": "Revista",
+    "state": "Publicado",
+    "date": "2026-03-28T21:55:00.000Z",
+    "downloadUrl": "https://www.patreon.com/posts/37bits-magazine-146407493",
+    "coverImage": "/CGPC/assets/docs_images/331a17b5-97bf-80e0-be7c-cf07de46fbbc_cover.png",
+    "fileUrl": "/CGPC/assets/docs_files/Magazine_37Bits_Edicion_1_Standard_compressed.pdf"
+  }
+]

@@ -82,7 +82,7 @@ const Navegador = ({ initialView = 'sobre-mi' }) => {
               backgroundColor: '#D5DBDC'
             }}>
               <img 
-                src="/CGPC/src/assets/profile/cgpc_profile.jpg" 
+                src="/CGPC/assets/profile/cgpc_profile.jpg" 
                 alt="Profile" 
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
               />
